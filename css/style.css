@@ -1,0 +1,213 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Preto-opaco */
+    color: #e0e0e0; /* Cor clara para o texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #333; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor clara para o texto */
+    padding: 10px 20px;
+    border-bottom: 2px solid #8257e5; /* Linha roxa-clara no topo do footer */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Alinha o logotipo à esquerda e os links à direita */
+    align-items: center;
+}
+
+.logo a {
+    color: #e0e0e0; /* Cor do texto do logotipo */
+    text-decoration: none;
+    font-size: 24px; /* Tamanho do texto do logotipo */
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 10px; /* Espaço entre os links */
+}
+
+.nav-links a {
+    color: #e0e0e0; /* Cor do texto dos links */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: #333;
+    background-color: #e0e0e0; /* Cor ao passar o mouse */
+    border-radius: 4px; /* Borda arredondada no hover */
+}
+
+/* Estilo das seções */
+section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Cinza claro */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    color: #333; /* Cor do texto para contraste com o fundo cinza claro */
+}
+
+/* Estilo específico para a seção de boas-vindas */
+.welcome {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4; /* Cinza claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.text-content {
+    flex: 1; /* O texto ocupará a maior parte do espaço */
+}
+
+.image-content {
+    margin-left: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.image-content img {
+    width: 300px; /* Aumenta o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Estilo dos ícones e títulos */
+h1, h2, h3, h4, h5, h6, .icon {
+    color: #8257e5; /* Roxo-claro semelhante ao da Rocketseat */
+}
+
+/* Estilo da galeria de portfólio */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33% - 20px); /* Tamanho dos itens para três colunas com espaço */
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff; /* Fundo branco para os itens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para os itens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.portfolio-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #8257e5; /* Linha roxa-clara abaixo da imagem */
+}
+
+.portfolio-item p {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Fundo claro para a descrição */
+    margin: 0;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Estilo do formulário de contato */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333; /* Fundo escuro para os campos */
+    color: #e0e0e0; /* Texto claro nos campos */
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #8257e5; /* Roxo-claro para o botão de enviar */
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9a67e5; /* Tom mais claro de roxo ao passar o mouse */
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor clara para o texto */
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #8257e5; /* Linha roxa-clara no topo do footer */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #e0e0e0; /* Cor clara para os ícones das redes sociais */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #8257e5; /* Cor roxa-clara ao passar o mouse */
+}
+
+ul.skills {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove o espaçamento à esquerda */
+    margin: 0; /* Remove a margem padrão */
+}
+
+ul.skills li {
+    display: flex; /* Usar flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente os itens dentro de cada item da lista */
+    margin-bottom: 15px; /* Espaço entre os itens da lista */
+    line-height: 0.5; /* Espaço entre as linhas do texto */
+}
+
+ul.skills li .icon {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
